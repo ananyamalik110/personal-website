@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Warm, Earthy Color Palette */
+  --gold: #c9a961;
+  --gold-dark: #b8955a;
+  --gold-light: #d4b76f;
+
+  --bg-primary: #fefdfb;
+  --bg-secondary: #f7f5f2;
+  --bg-accent: #faf8f5;
+
+  --border-color: #e8e6e1;
+  --border-dark: #d4d2cc;
+
+  --text-primary: #2a2826;
+  --text-secondary: #5a5855;
+  --text-muted: #8a8783;
+
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 16px;
+
+  color-scheme: light;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 3rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+}
