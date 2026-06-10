@@ -21,6 +21,11 @@ function CaseStudyOnboarding() {
             <p className="case-study-intro">
               Built a React-based KYB/KYC onboarding system with automated stakeholder alerts and integrated verification workflows, replacing fragmented email-based onboarding processes.
             </p>
+            <div className="project-link">
+              <a href="https://kyc.hedgit.io/" target="_blank" rel="noopener noreferrer" className="live-project-link">
+                View Live Project →
+              </a>
+            </div>
           </div>
         </div>
       </section>

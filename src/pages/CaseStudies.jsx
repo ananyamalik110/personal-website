@@ -6,14 +6,6 @@ function CaseStudies() {
   const caseStudies = [
     {
       id: 1,
-      title: 'Lead Lifecycle & Sales Operations Automation System',
-      description:
-        'Designed and implemented a lightweight sales operations system to streamline lead management, automate follow-ups, and improve pipeline visibility for a high-volume business development workflow.',
-      tags: ['Automation', 'Sales Operations', 'Workflow Design'],
-      link: '/case-studies/lead-lifecycle',
-    },
-    {
-      id: 2,
       title: 'Digital Client Onboarding & KYB/KYC Workflow Platform',
       description:
         'Built a React-based KYB/KYC onboarding system with automated stakeholder alerts and integrated verification workflows, replacing fragmented email-based onboarding processes.',
@@ -21,12 +13,20 @@ function CaseStudies() {
       link: '/case-studies/onboarding',
     },
     {
-      id: 3,
+      id: 2,
       title: 'AI Client Support & Knowledge Automation System',
       description:
         'Built a Telegram-based AI assistant with a centralized knowledge base capable of answering client queries, generating responses, and streamlining support workflows.',
       tags: ['AI', 'OpenAI', 'Automation'],
       link: '/case-studies/ai-support',
+    },
+    {
+      id: 3,
+      title: 'Lead Lifecycle & Sales Operations Automation System',
+      description:
+        'Designed and implemented a lightweight sales operations system to streamline lead management, automate follow-ups, and improve pipeline visibility for a high-volume business development workflow.',
+      tags: ['Automation', 'Sales Operations', 'Workflow Design'],
+      link: '/case-studies/lead-lifecycle',
     },
   ];
 

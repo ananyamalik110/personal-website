@@ -18,15 +18,8 @@ function Contact() {
             <div className="contact-info">
               <div className="contact-item">
                 <h3 className="contact-label">Email</h3>
-                <a href="mailto:ananyamalik0309@gmail.com" className="contact-link">
-                  ananyamalik0309@gmail.com
-                </a>
-              </div>
-
-              <div className="contact-item">
-                <h3 className="contact-label">Phone</h3>
-                <a href="tel:+919354416562" className="contact-link">
-                  +91-9354416562
+                <a href="mailto:ananyamalik110@gmail.com" className="contact-link">
+                  ananyamalik110@gmail.com
                 </a>
               </div>
 
@@ -49,7 +42,7 @@ function Contact() {
                 Whether you're looking to optimize operations, implement intelligent automation,
                 or build scalable systems, I'd love to hear from you.
               </p>
-              <a href="mailto:ananyamalik0309@gmail.com" className="cta-button">
+              <a href="mailto:ananyamalik110@gmail.com" className="cta-button">
                 Send an Email
               </a>
             </div>

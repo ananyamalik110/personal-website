@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Publications.css';
 
 function Publications() {
@@ -5,52 +6,52 @@ function Publications() {
     {
       id: 1,
       title: 'Your Guide to Finding Great Cryptocurrency Investments',
-      description:
-        'A comprehensive guide covering research methodologies for evaluating crypto projects, including whitepaper analysis, team verification, VC backing, tokenomics indicators, market capitalization, and community assessment.',
+      description: 'Research methodologies for evaluating crypto projects and identifying promising opportunities.',
       category: 'Investment Research',
       date: 'June 2024',
       readTime: '4 min read',
-      link: 'https://medium.com/@ananyamalik0309/your-guide-to-finding-great-cryptocurrency-investments-92bb285d5737',
+      link: '/publications/crypto-investments',
+      internal: true,
     },
     {
       id: 2,
-      title: 'Ethereum Token Economics',
-      description:
-        'An exploration of Ethereum\'s tokenomics covering its uncapped supply, the historic transition from Proof of Work to Proof of Stake, smart contract utility, governance through EIPs, and the factors influencing its market value.',
-      category: 'Blockchain',
+      title: 'Impermanent Loss Calculation Explained',
+      description: 'Understanding the risks liquidity providers face in AMM pools with practical examples.',
+      category: 'DeFi',
       date: 'October 2023',
       readTime: '4 min read',
-      link: 'https://medium.com/@ananyamalik0309/ethereum-token-economics-1d6c44c49aa3',
+      link: '/publications/impermanent-loss',
+      internal: true,
     },
     {
       id: 3,
-      title: 'Impermanent Loss Calculation Explained',
-      description:
-        'A detailed explanation of the risk liquidity providers encounter in AMM pools, including calculation methods and practical implications for DeFi participants.',
-      category: 'DeFi',
-      date: 'October 2023',
-      readTime: '4 min read',
-      link: 'https://medium.com/@ananyamalik0309/impermanent-loss-calculation-explained',
-    },
-    {
-      id: 4,
       title: 'Automated Market Maker Pools',
-      description:
-        'Understanding how AMM pools work in decentralized finance, covering liquidity provision, price determination through demand and supply dynamics, and the concept of impermanent loss.',
+      description: 'How AMM pools enable decentralized trading through liquidity provision and price algorithms.',
       category: 'DeFi',
       date: 'September 2023',
       readTime: '4 min read',
-      link: 'https://medium.com/@ananyamalik0309/automated-market-maker-pools',
+      link: '/publications/amm-pools',
+      internal: true,
+    },
+    {
+      id: 4,
+      title: 'Ethereum Token Economics',
+      description: 'Exploring Ethereum\'s supply model, PoS transition, and market dynamics.',
+      category: 'Blockchain',
+      date: 'October 2023',
+      readTime: '4 min read',
+      link: '/publications/ethereum-tokenomics',
+      internal: true,
     },
     {
       id: 5,
       title: 'Bitcoin Token Economics',
-      description:
-        'An analysis of Bitcoin\'s economic model examining its fixed supply cap, halving mechanism, mining rewards, transaction fees, and the various market factors that influence BTC price movements.',
+      description: 'Analyzing Bitcoin\'s fixed supply, halving mechanism, and market factors influencing price.',
       category: 'Cryptocurrency',
       date: 'September 2023',
       readTime: '6 min read',
-      link: 'https://medium.com/@ananyamalik0309/bitcoin-token-economics',
+      link: '/publications/bitcoin-tokenomics',
+      internal: true,
     },
   ];
 
@@ -68,24 +69,34 @@ function Publications() {
       <section className="publications-section">
         <div className="container">
           <div className="publications-list">
-            {publications.map((publication) => (
-              <a
-                key={publication.id}
-                href={publication.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="publication-card"
-              >
-                <div className="publication-category">{publication.category}</div>
-                <h3 className="publication-title">{publication.title}</h3>
-                <p className="publication-description">{publication.description}</p>
-                <div className="publication-meta">
-                  <span className="publication-date">{publication.date}</span>
-                  <span className="publication-divider">•</span>
-                  <span className="publication-read-time">{publication.readTime}</span>
-                </div>
-              </a>
-            ))}
+            {publications.map((publication) => {
+              const CardContent = (
+                <>
+                  <h3 className="publication-title">{publication.title}</h3>
+                  <p className="publication-description">{publication.description}</p>
+                </>
+              );
+
+              return publication.internal ? (
+                <Link
+                  key={publication.id}
+                  to={publication.link}
+                  className="publication-card"
+                >
+                  {CardContent}
+                </Link>
+              ) : (
+                <a
+                  key={publication.id}
+                  href={publication.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="publication-card"
+                >
+                  {CardContent}
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
