@@ -1,0 +1,304 @@
+.blog-post {
+  min-height: 100vh;
+}
+
+.blog-header {
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.blog-header-content {
+  max-width: 850px;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-category {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+}
+
+.blog-date,
+.blog-read-time {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+.blog-divider {
+  color: var(--text-tertiary);
+  font-size: 0.75rem;
+}
+
+.blog-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.blog-intro {
+  font-size: clamp(1.0625rem, 2vw, 1.125rem);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.blog-body {
+  padding: clamp(3.5rem, 7vw, 5rem) 0;
+  background: var(--bg-secondary);
+}
+
+.blog-content {
+  max-width: 850px;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+.content-section:last-child {
+  margin-bottom: 0;
+}
+
+.content-section h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.content-section h3 {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+}
+
+.content-section p {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0 0 1.25rem;
+}
+
+.content-section p:last-child {
+  margin-bottom: 0;
+}
+
+.content-section ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.content-section ul li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.content-section ul li:last-child {
+  margin-bottom: 0;
+}
+
+.vc-list {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.vc-list li {
+  break-inside: avoid;
+  margin-bottom: 0.5rem;
+}
+
+.market-cap-list li {
+  margin-bottom: 1.25rem;
+}
+
+.market-cap-list li strong {
+  color: var(--text-primary);
+}
+
+.ethereum-aspects {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.ethereum-aspects li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.market-factors-list {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.market-factors-list li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.blog-image-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.blog-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image-small {
+  max-width: 50%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alternatives-list,
+.price-list {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.alternatives-list li,
+.price-list li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.formula-text {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 1rem 0;
+  font-family: 'Courier New', monospace;
+  background: var(--bg-accent);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+.calculation-text {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.formula-box {
+  background: var(--bg-accent);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--gold);
+}
+
+.formula-box .formula-text {
+  margin: 0.5rem 0;
+  background: transparent;
+  padding: 0;
+}
+
+.comparison-list {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.comparison-list li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.comparison-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.amm-components-list {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.amm-components-list li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.bitcoin-aspects-list {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.bitcoin-aspects-list li {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--gold);
+}
+
+.back-link::before {
+  content: '←';
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .vc-list {
+    columns: 1;
+  }
+}

@@ -10,11 +10,10 @@ function Home() {
             <div className="hero-text">
               <h1 className="hero-title">Ananya Malik</h1>
               <p className="hero-subtitle">
-                Management Consultant focused on AI Automation, Operations, and Intelligent Systems.
+                Management Consultant focused on operational strategy, AI automation, and product systems design.
               </p>
               <p className="hero-description">
-                I help businesses redesign workflows, optimise operations, and build scalable systems
-                through intelligent automation and process architecture.
+                I help businesses streamline operations, design product workflows, and implement data-driven solutions.
               </p>
             </div>
             <div className="hero-image">
@@ -30,18 +29,13 @@ function Home() {
           <h2 className="section-title">About</h2>
           <div className="about-content">
             <p>
-              I work at the intersection of operational strategy and intelligent automation — helping
-              businesses rethink workflows, remove inefficiencies, and build systems designed to scale.
+              My background spans fintech, digital assets, and operations consulting, with experience designing product features, building operational frameworks, and implementing AI-enabled solutions in fast-paced environments.
             </p>
             <p>
-              My background spans financial services, digital assets, and operations, with experience
-              designing AI-enabled workflows, automation systems, and process infrastructure across
-              fast-moving environments.
+              I'm particularly drawn to problems where product thinking, analytical rigor, and operational design converge—turning ambiguity into structured systems and insights into execution.
             </p>
             <p>
-              I'm particularly interested in practical applications of AI: not as standalone tools,
-              but as systems that improve decision-making, reduce friction, and help teams operate
-              more effectively.
+              My interests span Web3 development, AI automation, and cryptocurrency markets—always exploring how emerging tech can solve operational challenges.
             </p>
           </div>
         </div>
@@ -53,31 +47,27 @@ function Home() {
           <h2 className="section-title">What I Do</h2>
           <div className="services-grid">
             <div className="service-card">
-              <h3 className="service-title">AI Automation & Workflow Design</h3>
+              <h3 className="service-title">Product Strategy & Systems Design</h3>
               <p className="service-description">
-                Designing intelligent systems that reduce manual effort, automate repetitive
-                processes, and improve operational efficiency.
+                Designing product features, operational workflows, and scalable systems aligned with business objectives.
               </p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">Operational Strategy & Systems Design</h3>
+              <h3 className="service-title">Business Analysis & Process Optimization</h3>
               <p className="service-description">
-                Translating business objectives into scalable workflows, SOPs, and operating
-                structures that support long-term growth.
+                Analyzing workflows, identifying inefficiencies, and implementing data-informed solutions.
               </p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">Digital Asset Operations</h3>
+              <h3 className="service-title">Web3 & Digital Asset Operations</h3>
               <p className="service-description">
-                Building operational frameworks and decision systems within crypto-native
-                environments and fast-moving markets.
+                Building operational frameworks, compliance workflows, and product systems for crypto-native businesses.
               </p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">Team Enablement</h3>
+              <h3 className="service-title">AI Automation & Implementation</h3>
               <p className="service-description">
-                Helping teams adopt smarter workflows, improve collaboration, and integrate AI
-                into day-to-day operations.
+                Integrating intelligent automation, workflow tools, and AI solutions to improve efficiency.
               </p>
             </div>
           </div>
